@@ -7,11 +7,6 @@
   --max-width: 1170px;
   --fixed-width: 620px;
 }
-/*
-=============== 
-Global Styles
-===============
-*/
 
 ::-webkit-scrollbar {
   width: 5px;

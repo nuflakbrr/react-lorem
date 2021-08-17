@@ -20,7 +20,7 @@ function App() {
       <h3>lorem ipsum generator</h3>
       <form className="lorem-form" onSubmit={handleSubmit}>
         <label htmlFor="amount">paragraphs:</label>
-        <input type="number" name="amount" id="amount" value={count} onChange={(e) => setCount(e.target.value)} />
+        <input type="number" name="quantity" id="quantity" min="0" max="8" value={count} onChange={(e) => setCount(e.target.value)} />
         <button className="btn">generate!</button>
       </form>
       <article className="lorem-text">

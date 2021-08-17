@@ -10,8 +10,8 @@ function App() {
     if (count <= 0) {
       amount = 1;
     }
-    if (count > 8) {
-      amount = 8;
+    if (count > 10) {
+      amount = 10;
     }
     setText(Data.slice(0, amount));
   };
@@ -20,7 +20,7 @@ function App() {
       <h3>lorem ipsum generator</h3>
       <form className="lorem-form" onSubmit={handleSubmit}>
         <label htmlFor="amount">paragraphs:</label>
-        <input type="number" name="quantity" id="quantity" min="0" max="8" value={count} onChange={(e) => setCount(e.target.value)} />
+        <input type="number" name="quantity" id="quantity" min="0" max="10" value={count} onChange={(e) => setCount(e.target.value)} />
         <button className="btn">generate!</button>
       </form>
       <article className="lorem-text">
